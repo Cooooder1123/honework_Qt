@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Userform</class>
+ <widget class="QDialog" name="Userform">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>611</width>
+    <height>437</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{background:rgb(232,241,252);
+margin:0.5px 0.5px 0.5px 0.5px;
+border:2px solid rgb(120,170,220);
+
+
+}
+
+QScrollBar:horizontal {
+        height: 20px;
+        background: transparent;
+        margin-top: 3px;
+        margin-bottom: 3px;
+		
+}
+QScrollBar::handle:horizontal {
+        height: 20px;
+        min-width: 30px;
+        background: rgb(170, 200, 230);
+        margin-left: 15px;
+        margin-right: 15px;
+border-radius:5px;
+}
+QScrollBar::handle:horizontal:hover {
+        background: rgb(165, 195, 225);
+}
+QScrollBar::sub-line:horizontal {
+        width: 15px;
+        background: transparent;
+        image: url(:/White/arrowLeft);
+        subcontrol-position: left;
+}
+QScrollBar::add-line:horizontal {
+        width: 15px;
+        background: transparent;
+        image: url(:/White/arrowRight);
+        subcontrol-position: right;
+}
+QScrollBar::sub-line:horizontal:hover {
+        background: rgb(170, 200, 230);
+}
+QScrollBar::add-line:horizontal:hover {
+        background: rgb(170, 200, 230);
+}
+QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal {
+        background: transparent;
+}
+QScrollBar:vertical {
+        width: 20px;
+        background: transparent;
+        margin-left: 3px;
+        margin-right: 3px;
+border-radius:5px;
+}
+QScrollBar::handle:vertical {
+        width: 20px;
+        min-height: 30px;
+        background: rgb(170, 200, 230);
+        margin-top: 15px;
+        margin-bottom: 15px;
+		border-radius:5px;
+}
+QScrollBar::handle:vertical:hover {
+        background: rgb(165, 195, 225);
+}
+QScrollBar::sub-line:vertical {
+        height: 15px;
+        background: transparent;
+        image: url(:/White/topArrow);
+        subcontrol-position: top;
+}
+QScrollBar::add-line:vertical {
+        height: 15px;
+        background: transparent;
+        image: url(:/White/bottomArrow);
+        subcontrol-position: bottom;
+}
+QScrollBar::sub-line:vertical:hover {
+        background: rgb(170, 200, 230);
+}
+QScrollBar::add-line:vertical:hover {
+        background: rgb(170, 200, 230);
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+        background: transparent;
+}
+
+QScrollBar#verticalScrollBar:vertical {
+        margin-top: 30px;
+}</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>50</y>
+     <width>201</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+    </font>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QCheckBox" name="checkBox">
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+border:1px  rgb(121,189,143);
+border-radius:5px;</string>
+      </property>
+      <property name="text">
+       <string>Book name</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(255,255,255);font:2em;
+border:1px solid rgb(121,189,143);
+border-radius:5px;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QCheckBox" name="checkBox_2">
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Author</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(255,255,255);font:2em;
+border:1px solid rgb(121,189,143);
+border-radius:5px;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QCheckBox" name="checkBox_3">
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Publisher</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(255,255,255);font:2em;
+border:1px solid rgb(121,189,143);
+border-radius:5px;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>200</y>
+     <width>491</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QHeaderView{
+        border: none;
+        border-bottom: 1px solid rgb(0, 78, 161);
+        background: transparent;
+       
+}
+QHeaderView::section:horizontal {
+        border: 2px;
+        color: rgb(2, 65, 132);
+        background: transparent;
+        padding-left: 5px;
+}
+QHeaderView::section:horizontal:hover {
+        color: white;
+        background: rgb(0, 78, 161);
+}
+QHeaderView::section:horizontal:pressed {
+        color: white;
+        background: rgb(6, 94, 187);
+}
+QHeaderView::up-arrow {
+        width: 13px;
+        height: 11px;
+        padding-right: 5px;
+       
+        subcontrol-position: center right;
+}
+
+QHeaderView::down-arrow {
+        width: 13px;
+        height: 11px;
+        padding-right: 5px;
+       
+        subcontrol-position: center right;
+}
+QTableView{
+
+border-radius:5px;}
+QTableView {
+        border: 1px solid rgb(111, 156, 207);
+        background: rgb(224, 238, 255,220);
+        gridline-color: rgb(111, 156, 207);
+}
+QTableView::item {
+        padding-left: 5px;
+        padding-right: 5px;
+        border: none;
+        background: white;
+        border-right: 1px solid rgb(111, 156, 207);
+        border-bottom: 1px solid rgb(111, 156, 207);
+}
+QTableView::item:selected {
+        background: rgba(0, 0, 0, 100);
+}
+QTableView::item:selected:!active {
+        color: rgb(65, 65, 65);
+}
+QTableView::indicator {
+        width: 20px;
+        height: 20px;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>50</y>
+     <width>133</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#widget_2{
+	border:2px solid rgb(121,189,143);
+	border-radius:2px;
+}</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#label{
+	margin:5px 5px 5px 5px;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Account：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>50</y>
+     <width>121</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_3{
+	border:2px solid rgb(121,189,143);
+	border-radius:5px;
+	background-color:rgb(255,255,255,211);
+	
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>160</y>
+     <width>81</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>9</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background:rgb(120,170,220,111);font:2em;
+border:1px dashed rgb(121,189,143);
+border-radius:5px;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255,0);
+	
+	border:2px solid rgb(121,189,143);
+}</string>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>160</y>
+     <width>81</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background:rgb(120,170,220,111);font:2em;
+border:1px dashed rgb(121,189,143);
+border-radius:5px;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255,0);
+	
+	border:2px solid rgb(121,189,143);
+}</string>
+   </property>
+   <property name="text">
+    <string>&amp;Search</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>0</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_5{
+	border:2px solid rgb(120,170,220);
+	;
+	border-radius:6px;
+background:url(E:/Qt code/BookSellSys/close.png)
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>100</y>
+     <width>131</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background:rgb(120,170,220,111);font:2em;
+border:1px dashed rgb(121,189,143);
+border-radius:5px;
+
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255,0);
+	
+	border:2px solid rgb(121,189,143);
+}</string>
+      </property>
+      <property name="text">
+       <string>Modify Account</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background:rgb(120,170,220,111);font:2em;
+border:1px dashed rgb(121,189,143);
+border-radius:5px;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255,0);
+	
+	border:2px solid rgb(121,189,143);
+}</string>
+      </property>
+      <property name="text">
+       <string>Buying Record</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>200</y>
+     <width>41</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <underline>false</underline>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background:rgb(120,170,220,111);font:2em;
+border:1px dashed rgb(121,189,143);
+border-radius:5px;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255,0);
+	
+	border:2px solid rgb(121,189,143);
+}</string>
+   </property>
+   <property name="text">
+    <string>R</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>200</y>
+     <width>451</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> border: 1px solid rgb(111, 156, 207);
+background: rgb(224, 238, 255,220);
+border-radius:5px;
+margin:1px;</string>
+   </property>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>tableView</zorder>
+  <zorder>widget_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>pushButton_4</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>pushButton_5</zorder>
+  <zorder>pushButton_6</zorder>
+  <zorder>textEdit</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

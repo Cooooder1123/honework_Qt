@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PurchaseRec</class>
+ <widget class="QDialog" name="PurchaseRec">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QDialog{
+	background:rgb(232,241,252);
+	margin:0.5px 0.5px 0.5px 0.5px;
+	
+}</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>421</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string> 购买记录</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QTableView" name="tableView">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView{background:rgb(255,255,255);font:2em;
+border:2px solid rgb(121,189,143);
+border-radius:5px;}
+QHeaderView{
+        border: none;
+        border-bottom: 1px solid rgb(0, 78, 161);
+        background: transparent;
+       
+}
+QHeaderView::section:horizontal {
+        border: 2px;
+        color: rgb(2, 65, 132);
+        background: transparent;
+        padding-left: 5px;
+}
+QHeaderView::section:horizontal:hover {
+        color: white;
+        background: rgb(0, 78, 161);
+}
+QHeaderView::section:horizontal:pressed {
+        color: white;
+        background: rgb(6, 94, 187);
+}
+QHeaderView::up-arrow {
+        width: 13px;
+        height: 11px;
+        padding-right: 5px;
+       
+        subcontrol-position: center right;
+}
+
+QHeaderView::down-arrow {
+        width: 13px;
+        height: 11px;
+        padding-right: 5px;
+       
+        subcontrol-position: center right;
+}
+
+QTableView {
+        border: 1px solid rgb(111, 156, 207);
+        background: rgb(224, 238, 255);
+        gridline-color: rgb(111, 156, 207);
+}
+QTableView::item {
+        padding-left: 5px;
+        padding-right: 5px;
+        border: none;
+        background: white;
+        border-right: 1px solid rgb(111, 156, 207);
+        border-bottom: 1px solid rgb(111, 156, 207);
+}
+QTableView::item:selected {
+        background: rgba(0, 0, 0, 100);
+}
+QTableView::item:selected:!active {
+        color: rgb(65, 65, 65);
+}
+QTableView::indicator {
+        width: 20px;
+        height: 20px;
+}
+</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
